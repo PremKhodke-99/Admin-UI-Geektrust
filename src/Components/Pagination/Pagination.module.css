@@ -1,0 +1,48 @@
+.wrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+}
+
+.wrapper button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    border: none;
+    background-color: #1890ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonGray{
+    background-color: #f5f5f5;
+    border: 1px solid #abababc9;
+    color: #747474c9;
+}
+
+.activeButton{
+    border: 1px solid #1890ff;
+    background-color: #fff;
+    color: #1890ff;
+    cursor: pointer;
+}
+
+.buttonNumber{
+    border: none;
+    background-color: #1890ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons{
+    height: 20px;
+    width: 20px;
+}

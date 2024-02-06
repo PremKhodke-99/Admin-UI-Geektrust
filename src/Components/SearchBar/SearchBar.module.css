@@ -1,0 +1,45 @@
+.search {
+    margin-top: 20px;
+    padding-left: 15px;
+    width: 90vw;
+    height: 40px;
+    font-size: 20px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .search {
+        margin-top: 20px;
+        padding-left: 15px;
+        width: 90vw;
+        height: 40px;
+        font-size: 20px;
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .search {
+        margin-top: 20px;
+        padding-left: 15px;
+        width: 90vw;
+        height: 40px;
+        font-size: 20px;
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For Desktop */
+    .search {
+        margin-top: 20px;
+        padding-left: 15px;
+        width: 90vw;
+        height: 40px;
+        font-size: 20px;
+        align-self: center;
+    }
+}
