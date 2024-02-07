@@ -66,7 +66,9 @@ const Table = ({
         </tbody>
       </table>
       <div className={styles.wrapbutton}>
-        <button className={styles.deleteButton} onClick={() => handleDeleteRows(setChecked)}>Delete Selected</button>
+        <button
+          className={styles.deleteButton}
+          onClick={() => handleDeleteRows(setChecked)}>Delete Selected</button>
         <Pagination nPages={nPages}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage} />
