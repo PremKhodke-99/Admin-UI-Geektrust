@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './Table.module.css';
 import { RiEditBoxLine } from "react-icons/ri";
 import { MdOutlineDeleteForever } from "react-icons/md";
+import Pagination from "../Pagination/Pagination";
 
 
 const Table = ({
@@ -11,7 +12,10 @@ const Table = ({
   selectedRow,
   handleSelectAll,
   editData,
-  deleteData }) => {
+  deleteData,
+  nPages,
+  currentPage,
+  setCurrentPage }) => {
 
   const [checked, setChecked] = useState(false);
 
@@ -23,7 +27,7 @@ const Table = ({
             <th><input
               type="checkbox"
               name="select-all"
-              checked={selectedRow.length == currentData.length}
+              checked={selectedRow.length === currentData.length}
               onChange={() => {
                 console.log(checked)
                 setChecked(!checked);
@@ -61,7 +65,12 @@ const Table = ({
           }
         </tbody>
       </table>
-      <button className={styles.deleteButton} onClick={() => handleDeleteRows(setChecked)}>Delete Selected</button>
+      <div className={styles.wrapbutton}>
+        <button className={styles.deleteButton} onClick={() => handleDeleteRows(setChecked)}>Delete Selected</button>
+        <Pagination nPages={nPages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage} />
+      </div>
     </div>
   )
 }

@@ -10,6 +10,14 @@
 
 .wrapper .table{
     width: 100%;
+    margin: 0 20px;
+}
+
+.wrapbutton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -33,6 +41,18 @@
     .wrapper .table th, td{
         width: 10px;
     }
+
+    .wrapbutton .deleteButton{
+        background-color: #ff5171;
+        padding: 5px;
+        border: none;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+
 }
 
 th, td{
@@ -76,7 +96,6 @@ img{
     border: none;
     color: #fff;
     font-size: 16px;
-    margin-top: 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;

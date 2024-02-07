@@ -3,7 +3,7 @@ import './App.css'
 import axios from 'axios';
 import SearchBar from './Components/SearchBar/SearchBar'
 import Table from './Components/Table/Table';
-import Pagination from './Components/Pagination/Pagination';
+// import Pagination from './Components/Pagination/Pagination';
 
 
 function App() {
@@ -78,11 +78,14 @@ function App() {
         selectedRow={selectedRow}
         handleSelectAll={handleSelectAll}
         editData={editData}
-        deleteData={deleteData} />
-      <Pagination
+        deleteData={deleteData}
         nPages={nPages}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage} />
+      {/* <Pagination
+        nPages={nPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage} /> */}
     </div>
   )
 }

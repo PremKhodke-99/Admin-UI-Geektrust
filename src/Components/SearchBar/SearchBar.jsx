@@ -15,7 +15,7 @@ const SearchBar = ({data, setData}) => {
   }
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <input
         type="text"
         placeholder='Search by name, email or role'
